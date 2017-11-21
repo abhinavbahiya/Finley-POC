@@ -47,9 +47,7 @@ function uploadFiles() {
 }
 
 function deleteMe(receiptId) {
-  // Not Yet Completed
-  let newUrl = `${API.BASE_URL}${modifyUrls(API.REQUEST.UPDATE_DELETE_RECEIPTS), receiptId}.json`;
-  console.log(newUrl);
+  let newUrl = `${API.BASE_URL}${modifyUrls(API.REQUEST.UPDATE_DELETE_RECEIPTS, receiptId)}.json`;
   $.ajax({
     url: newUrl,
     method: API.TYPE.DELETE,
