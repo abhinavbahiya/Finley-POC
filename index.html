@@ -3,7 +3,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="./index.js"></script>
-    <p>Hi!</p>
+    <h2>Upload</h2>
+    <p>Hi! Would you like to upload receipts?</p>
+    <div>
+      <input id="inputFiles" type="file" name="files" multiple>
+      <button onClick = "uploadFiles()">Upload</button>
+    </div>
+    <hr/>
+    <h2>Existing Receipts</h2>
     <div id="main" style = "max-width: 90%; margin: 0 auto;"></div>
   </body>
 </html>
